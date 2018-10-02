@@ -1,5 +1,7 @@
 # tobler [![Build Status](https://travis-ci.org/vikepic/tobler.svg?branch=master)](https://travis-ci.org/vikepic/tobler)
 
+[![asciicast](https://asciinema.org/a/60YPdDBB5sCstpqAxsRFWu6Sy.png)](https://asciinema.org/a/60YPdDBB5sCstpqAxsRFWu6Sy)
+
 > A simple cli cartographer
 
 Named after [Waldo R. Tobler](https://en.wikipedia.org/wiki/Waldo_R._Tobler), the inventor of [the first law of geography](https://en.wikipedia.org/wiki/Tobler%27s_first_law_of_geography).
