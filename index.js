@@ -18,18 +18,19 @@ function getStyle(value, style) {
 	}
 }
 
-module.exports = function (detail = 4, roughness = 0.7, flags) {
+module.exports = function (width = 10, height = 10, roughness = 0.7, flags) {
 	const style = acceptedExportTypes.indexOf(flags.style);
 
 	if (style === -1 || style > acceptedExportTypes.length - 1) {
 		throw new Error(`Invalid style ${style}`);
 	}
 
-	const map = new Cordillera(detail, roughness).getLevels(3);
+	const cordillera = new Cordillera(roughness, width, height);
+	const map = cordillera.getLevels(3);
 
-	for (let y = 0; y < map.length; ++y) {
+	for (let y = 0; y < cordillera.height; ++y) {
 		let line = '';
-		for (let x = 0; x < map[y].length; ++x) {
+		for (let x = 0; x < cordillera.width; ++x) {
 			const tile = map[y][x];
 			line += getStyle(tile, style);
 		}

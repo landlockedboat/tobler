@@ -14,7 +14,7 @@ $ npm install --global tobler
 
 ```
 Usage
-	$ tobler [detail] [roughness]
+	$ tobler [width] [height] [roughness]
 
 Options
 	--style [pretty|numbers] Style of the output [Default: pretty]
@@ -24,6 +24,8 @@ Examples
 	generates a pretty map on your terminal
 	$ tobler --style=numbers
 	generates a not-so-pretty map on your terminal
+	$ tobler 5 5
+	generates a 5 by 5 map on your terminal
 ```
 
 ## License

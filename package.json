@@ -29,7 +29,7 @@
 	],
 	"dependencies": {
 		"chalk": "^2.4.1",
-		"cordillera": "^1.1.0",
+		"cordillera": "^2.0.0",
 		"meow": "^5.0.0"
 	},
 	"devDependencies": {

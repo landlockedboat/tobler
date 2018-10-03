@@ -6,6 +6,6 @@ test('Main test', t => {
 	console.log = function (out) {
 		output.push(out);
 	};
-	tobler(3, 0.7, {style: 'pretty'});
+	tobler(3, 3, 0.7, {style: 'pretty'});
 	t.truthy(output);
 });
